@@ -1,1 +1,1 @@
-web: gunicorn drfschallom.wsgi --log-file -
+web: gunicorn theowner.wsgi --log-file -
