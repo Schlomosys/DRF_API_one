@@ -37,7 +37,7 @@ class CreateQRView(CreateAPIView):
     POST create/
     """
     #permission_classes = (permissions.AllowAny,)
-    permission_classes = (IsAuthenticated,)
+    #permission_classes = (IsAuthenticated,)
     queryset = ''
     serializer_class = QRtestSerializer
     #throttle_classes = [AnonRateThrottle]
