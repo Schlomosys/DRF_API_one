@@ -47,9 +47,9 @@ class CreateQRView(CreateAPIView):
         text = request.data['text']
         
         output = generate_qr(text)
-        result = QRSerializer(output).data
+        #result = QRSerializer(output).data
         return Response(
-            data=result,
+            data=output,
             status=status.HTTP_201_CREATED
         )
         
